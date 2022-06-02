@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Stonecave</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+        <!-- twitter card metadata -->
+        <!-- OG Tags -->
+        <!-- favicon -->
+        <!-- moment.js for date formatting -->
+        <script src="https://stonecave.xyz/blog/theme/js/moment.js"></script>
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" href="https://stonecave.xyz/blog/theme/css/main.css" />
+		<script>
+			
+                /*! grunt-grunticon Stylesheet Loader - v2.1.2 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+    
+    (function(e){function t(t,n,r,o){"use strict";function a(){for(var e,n=0;u.length>n;n++)u[n].href&&u[n].href.indexOf(t)>-1&&(e=!0);e?i.media=r||"all":setTimeout(a)}var i=e.document.createElement("link"),l=n||e.document.getElementsByTagName("script")[0],u=e.document.styleSheets;return i.rel="stylesheet",i.href=t,i.media="only x",i.onload=o||null,l.parentNode.insertBefore(i,l),a(),i}var n=function(r,o){"use strict";if(r&&3===r.length){var a=e.navigator,i=e.Image,l=!(!document.createElementNS||!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===a.userAgent.indexOf("Chrome")||-1!==a.userAgent.indexOf("Series40")),u=new i;u.onerror=function(){n.method="png",n.href=r[2],t(r[2])},u.onload=function(){var e=1===u.width&&1===u.height,a=r[e&&l?0:e?1:2];n.method=e&&l?"svg":e?"datapng":"png",n.href=a,t(a,null,null,o)},u.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",document.documentElement.className+=" grunticon"}};n.loadCSS=t,e.grunticon=n})(this);(function(e,t){"use strict";var n=t.document,r="grunticon:",o=function(e){if(n.attachEvent?"complete"===n.readyState:"loading"!==n.readyState)e();else{var t=!1;n.addEventListener("readystatechange",function(){t||(t=!0,e())},!1)}},a=function(e){return t.document.querySelector('link[href$="'+e+'"]')},c=function(e){var t,n,o,a,c,i,u={};if(t=e.sheet,!t)return u;n=t.cssRules?t.cssRules:t.rules;for(var l=0;n.length>l;l++)o=n[l].cssText,a=r+n[l].selectorText,c=o.split(");")[0].match(/US\-ASCII\,([^"']+)/),c&&c[1]&&(i=decodeURIComponent(c[1]),u[a]=i);return u},i=function(e){var t,o,a;o="data-grunticon-embed";for(var c in e)if(a=c.slice(r.length),t=n.querySelectorAll(a+"["+o+"]"),t.length)for(var i=0;t.length>i;i++)t[i].innerHTML=e[c],t[i].style.backgroundImage="none",t[i].removeAttribute(o);return t},u=function(t){"svg"===e.method&&o(function(){i(c(a(e.href))),"function"==typeof t&&t()})};e.embedIcons=i,e.getCSS=a,e.getIcons=c,e.ready=o,e.svgLoadedCallback=u,e.embedSVG=u})(grunticon,this);
+                
+                grunticon(["https://stonecave.xyz/blog/theme/css/icons.data.svg.css", "https://stonecave.xyz/blog/theme/css/icons.data.png.css", "https://stonecave.xyz/blog/theme/css/icons.fallback.css"]);
+            </script>
+        <noscript><link href="https://stonecave.xyz/blog/theme/css/icons.fallback.css" rel="stylesheet"></noscript>
+        <!-- menu toggle javascript -->
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", initMenu);
+            
+            function initMenu(){
+                var menu = document.getElementById("menu");
+                var menulink = document.getElementById("menu-link");
+                menulink.addEventListener("click", function toggleMenu(){
+                        window.event.preventDefault();
+                        menulink.classList.toggle('active');
+                        menu.classList.toggle('active');              
+                    });
+            };
+        </script>
+</head>
+<body>
+    <div role="banner" id="masthead">
+        <header>
+            <h1><a href="https://stonecave.xyz/blog/">StoneCave's Blog</a></h1>
+            <a href="#menu" id="menu-link">more stuff</a>
+            <nav id="menu">
+                <ul>
+                            <li><a href="https://stonecave.xyz/blog/category/dl.html">DL</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+        <div class="page" role="main">
+<div class="page-title">
+        <h1>archives</h1>
+    </div>
+<div class="articles">
+    <ol>
+        <li>
+            <article>
+                <footer>
+                        <p>
+                        <time datetime="2019-05-13 00:00:00+09:00">
+                            <script>document.write(moment('2019-05-13 00:00:00+09:00').format('LL'));</script>
+                        </time>
+                                in <a href="https://stonecave.xyz/blog/category/dl.html"><span class="category-tag">DL</span></a>
+                    </p>
+                </footer>
+                <header>
+                    <a href="https://stonecave.xyz/blog/jupyter-notebookdeshen-ceng-xue-xi-moderunoguiwozuo-ru.html">
+                        <h2>Jupyter Notebookで深層学習モデルのGUIを作る</h2>
+                    </a>
+                </header>
+                <div class="summary"><h1>シーン設定</h1>
+<p>ある問題に対して、深層学習モデルを作成しました、それで内部で使ってもらうとき、使う人がpythonやプログラミングに詳しくない（上司？笑う）、そのとき簡単で使えるGUIが欲しい、しかしC++やpygameなどでGUI作るのがメンド、如何すればいいの？</p>
+<h1>Jupyter ipywidgets</h1>
+<p>先に、完成品はこんな感じ。
+<img alt="UI.JPG" src="./images/gui.jpeg"></p>
+<h2>Imports</h2>
+<div class="highlight"><pre><span></span><code><span class="c1">#基本機能とIO</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span> <span class="k">as</span> <span class="n">jprint</span>
+
+<span class="c1">#深層学習モデル</span>
+<span class="kn">from</span> <span class="nn">core.data_processor</span> <span class="kn">import</span> <span class="n">DataLoader</span>
+<span class="kn">from</span> <span class="nn">core.model</span> <span class="kn">import</span> <span class="n">Model</span>
+
+<span class="c1">#JupyterUI関連</span>
+<span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
+<span class="kn">from</span> <span class="nn">IPython …</span></code></pre></div> </div>
+                <div class="tags">
+                    <ul class="tags">
+                        <li><a href="https://stonecave.xyz/blog/tag/deeplearning-python-jupyter-ipywidgets.html" class="tag">DeepLearning Python Jupyter ipywidgets</a></li>
+                    </ul>
+                </div>
+                <a href="https://stonecave.xyz/blog/jupyter-notebookdeshen-ceng-xue-xi-moderunoguiwozuo-ru.html">
+                    <p class="readmore">Read more...</p>
+                </a>
+            </article>
+        </li>
+    </ol>
+</div>
+                <footer>
+                    <div class="icons">
+                    </div>
+                    <p>© <script>document.write(moment().format('YYYY'));</script> M. Merdan</p>
+                </footer>
+        </div>
+</body>
+</html>
